@@ -1,0 +1,54 @@
+:root {
+    --bs-body-bg: #001119;
+}
+
+.accent-color {
+    color: #849E91;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Black.woff);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Light.woff);
+}
+
+body {
+    font-family: "Montserrat";
+    font-weight: bold;
+    overflow: hidden;
+}
+.full-height {
+    height: 100vh;
+}
+
+
+.skill-issue {
+    display: none;
+}
+
+
+/* won't bother with landscape phone screen*/
+@media screen and (max-height: 600px){
+    .skill-issue {
+        display: flex;
+        background: #001119;
+        z-index: 9999;
+    }
+}

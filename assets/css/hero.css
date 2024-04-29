@@ -1,0 +1,52 @@
+.carousel-text {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    width: auto;
+}
+
+.carousel-text--active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+    animation-delay: 0.3s;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-info {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-info a img {
+    width: 30px;
+    height: 30px;
+    filter: invert(75%);
+}
+
+.contact-info a img:hover {
+    filter: invert(100%);
+    transition: filter 0.5s ease;
+}
+
+.particle-network-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 99%;
+    z-index: -1;
+}
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    cursor: pointer;
+}

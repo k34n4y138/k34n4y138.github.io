@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zakaria Moumen's Portfolio Website">
+    <meta name="keywords" content="Zakaria Moumen, 1337 student, software engineer, developer, programmer, coder, c++, python, django, linux, sysadmin, api, architect">
+    <meta name="author" content="Zakaria Moumen">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="referrer" content="no-referrer">
+    <title>Zakaria Moumen | Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/section.css">
+    <link rel="stylesheet" href="./assets/css/education.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
+</head>
+
+<body>
+    <div class="skill-issue position-fixed w-100 h-100 justify-content-center align-items-center p-5 text-center">
+        <p>
+            So much to learn, so little time.<br>
+            For a better experience, Find a bigger screen or rotate your device.
+        </p>
+    </div>
+    <div id="viewport">
+        <nav class="ms-5 l-side-nav">
+            <ul class="side-nav">
+                <li class="is-active"><span>Home</span></li>
+                <li><span>About</span></li>
+                <li><span>Education</span></li>
+                <li><span>Skills</span></li>
+                <li><span>Projects</span></li>
+            </ul>
+        </nav>
+        <div
+            class="section container full-height d-flex justify-content-center align-items-center flex-column is-active">
+            <div class='particle-network-animation'>
+            </div>
+            <div class='row border-bottom border-5' style="min-height: 270px;max-width:800px;width:80%;">
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="display-2 mb-0" style="line-height: 0.8;"> ZAKARIA MOUMEN</h2>
+                    <div class="d-relative" onclick="SwitchToNextTitle()" style="cursor: pointer;">
+                        <h4 class="carousel-text carousel-text--active">Software Developper</h4>
+                        <h4 class="carousel-text">Backend Programmer</h4>
+                        <h4 class="carousel-text">DevOps Practitioner</h4>
+                        <h4 class="carousel-text">1337 Student</h4>
+                        <h4 class="carousel-text">C++ Programmer</h4>
+                        <h4 class="carousel-text">Python Programmer</h4>
+                        <h4 class="carousel-text">Django Developper</h4>
+                        <h4 class="carousel-text">APIs Architect</h4>
+                        <script>
+                            var carouselTexts = document.getElementsByClassName("carousel-text");
+                            var carouselTextsLength = carouselTexts.length;
+                            var carouselTextsIndex = 0;
+                            function SwitchToNextTitle() {
+                                carouselTexts[carouselTextsIndex].classList.remove("carousel-text--active");
+                                carouselTextsIndex = (carouselTextsIndex + 1) % carouselTextsLength;
+                                carouselTexts[carouselTextsIndex].classList.add("carousel-text--active");
+                            }
+                            var carouselTextsInterval = setInterval(function () {
+                                SwitchToNextTitle();
+                            }, 2500);
+                        </script>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-end align-items-end">
+                    <img src='./assets/img/zmoumen3.png' class="hero-img">
+                </div>
+            </div>
+            <div class="d-flex mt-3">
+                <div class="contact-info">
+                    <a target="_blank" href="https://www.linkedin.com/in/zakaria-moumen/">
+                        <img src="./assets/img/linkedin.svg">
+                    </a>
+                    <a target="_blank" href="mailto:zmoumen@student.1337.ma">
+                        <img src="./assets/img/email.svg">
+                    </a>
+                    <a target="_blank" href="https://github.com/k34n4y138">
+                        <img src="./assets/img/github.svg">
+                    </a>
+                    <a target="_blank" href="https://flowcv.me/zakaria-moumen">
+                        <img src="./assets/img/resume2.png">
+                    </a>
+                </div>
+            </div>
+            <img src="./assets/img/scroll.gif" class="scroll-down">
+        </div>
+        <div class="section hidden container full-height ps-md-5">
+            <div class='d-flex flex-column justify-content-center align-items-center h-100'>
+                <div class='row d-flex justify-content-center'>
+                    <div class="col-md-12 col-12 mb-5 pb-5">
+                        <h2 class="display-2 mb-0">Passionat Individual</h2>
+                        <p style="font-weight: 300;" class="ms-1">
+                            Loves to code and to solve problems. Always looking for new challenges
+                            and has a keen eye for details.
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12 mb-5">
+                        <h4 class="border-bottom border-2 pb-1 accent-color">IT hobbyist since the age of 12</h4>
+                        <p style="font-weight: 300;" class="text-center text-md-start mb-1">
+                            Started coding at the age of 15. Never stopped since.
+                        </p>
+                        <!-- <p style="font-weight: 300;font-size: 8px;" class="text-center text-md-start text-muted">
+                        *Fixed computers and phones for friends and family.
+                    </p> -->
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <h4 class="border-bottom border-2 pb-1 accent-color"> Team Player</h4>
+                        <p style="font-weight: 300;" class="text-center text-md-start">
+                            Because great things are not done by one, but by a team of great individuals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section hidden container full-height ps-md-5">
+            <div class='d-flex flex-column justify-content-center align-items-center h-100'>
+                <img src="./assets/img/1337_background.jpg" class="triz-img">
+                <div class="triz-img-overlay"></div>
+                <div class='row d-flex justify-content-center'>
+                    <div class="col-md-12 col-12 mb-5 pb-5">
+                        <h2 class="display-2 mb-0">Student @ 1337</h2>
+                        <p style="font-weight: 300;" class="ms-1">
+                            1337 or LEET. A "School for Elites".<br />Part of 42 The network, and hosted by UM6P, they
+                            provide the infrastructure, we bring the skills.
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12 mb-5">
+                        <h4 class="border-bottom border-2 pb-1 accent-color">Extra ordinary curriculum</h4>
+                        <p style="font-weight: 300;" class="text-center text-md-start mb-1">
+                            Hot-loading talents. courses are projects you have to learn the required skill-set in order
+                            to
+                            validate.
+                        </p>
+                        <!-- <p style="font-weight: 300;font-size: 8px;" class="text-center text-md-start text-muted">
+                        *Fixed computers and phones for friends and family.
+                    </p> -->
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <h4 class="border-bottom border-2 pb-1 accent-color">Self paced system</h4>
+                        <p style="font-weight: 300;" class="text-center text-md-start">
+                            There's no way but Self-learning, acquired by reading documentations or exchanging knowledge
+                            with peers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section container full-height ps-md-5 hidden">
+            <div class='d-flex flex-column justify-content-center h-100'>
+                <div class='row d-flex justify-content-center'>
+                    <div class="col-md-12 col-12 mb-5 pb-5">
+                        <h2 class="display-2 mb-0">Skillset</h2>
+                        <p style="font-weight: 300;" class="ms-1">
+                            Languages, Frameworks, Tools, and Technologies I've worked with.
+                        </p>
+                    </div>
+                </div>
+                <div class=''>
+                    <!-- 
+                    <div class="badge bg-dark text-light m-1">C++</div>
+                    <div class="badge bg-dark text-light m-1">Java</div>
+                    <div class="badge bg-dark text-light m-1">Python</div>
+                    <div class="badge bg-dark text-light m-1">Rust</div>
+                    <div class="badge bg-dark text-light m-1">Bash</div>
+                    <div class="badge bg-dark text-light m-1">Django</div>
+                    <div class="badge bg-dark text-light m-1">Docker</div>
+                    <div class="badge bg-dark text-light m-1">Kubernetes</div>
+                    <div class="badge bg-dark text-light m-1">Linux</div>
+                    <div class="badge bg-dark text-light m-1">Git</div>
+                    <div class="badge bg-dark text-light m-1">PostgreSQL</div>
+                    <div class="badge bg-dark text-light m-1">DigitalOcean</div>
+                    <div class="badge bg-dark text-light m-1">Google Cloud</div>
+                     -->
+                    <div class="badge bg-dark text-light m-1">
+                        <img src="assets/img/logos/c++.png"
+                            style="width: 25px;height: 25px; margin: 5px;">
+                        C++
+                    </div>
+                    <div class="badge bg-dark text-light m-1">
+                        <img src="assets/img/logos/python.png"
+                            style="width: 25px;height: 25px; margin: 5px;">
+                        Python
+                    </div>
+                    <div class="badge bg-dark text-light m-1">
+                        <img src="assets/img/logos/bash.png"
+                            style="width: 25px;height: 25px; margin: 5px;">
+                        Bash
+                    </div>
+                    <div class="badge bg-dark text-light m-1">
+                        <img src="assets/img/logos/django.png"
+                            style="width: 25px;height: 25px; margin: 5px;">
+                        Django
+                    </div>
+                    <div class="badge bg-dark text-light m-1">
+                        <img src="assets/img/logos/docker.png"
+                        style="width: 25px;height: 25px; margin: 5px;">
+                        Docker
+                    </div>
+                    
+                    <div class="badge bg-dark text-light m-1">
+                        <img src="assets/img/logos/debian.png"
+                        style="width: 25px;height: 25px; margin: 5px;">
+                        Linux
+                    </div>
+                    <div class="badge bg-dark text-light m-1">
+                        <img src="assets/img/logos/git.png"
+                            style="width: 25px;height: 25px; margin: 5px;">
+                        Git
+                    </div>
+                    <div class="badge bg-dark text-light m-1">
+                        <img src="assets/img/logos/postgresql.png"
+                            style="width: 25px;height: 25px; margin: 5px;">
+                        PostgreSQL
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section container full-height ps-md-5 hidden">
+            <div class='d-flex flex-column justify-content-center h-100'>
+                <div class='row d-flex
+                justify-content-center'>
+                    <div class="col-md-12 col-12 mb-1 pb-1">
+                        <h2 class="display-2 mb-0">Project Highlights</h2>
+                        <p style="font-weight: 300;" class="ms-1">
+                            Some of the projects I've worked on.
+                        </p>
+                    </div>
+                </div>
+                <div class='row d-flex justify-content-center'>
+                    <div class="col-6 mb-3">
+                        <div class="card bg-dark text-light p-0 ">
+                            <img src="./assets/img/tixista_login.png" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-title ">Tixista</h6>
+                                <p class="card-text p-0" style="font-size: small; font-weight: 300;">
+                                    Campus Bus System
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark text-light p-0">
+                            <img src="./assets/img/inception.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-title ">Inception</h6>
+                                <p class="card-text p-0" style="font-size: small; font-weight: 300;">
+                                    Dockerized services
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark text-light p-0 ">
+                            <img src="./assets/img/webserv.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-title ">Webserv</h6>
+                                <p class="card-text p-0" style="font-size: small; font-weight: 300;">HTTP1.1 Server in
+                                    C++</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark text-light p-0 ">
+                            <img src="./assets/img/pong.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-title">Transcendence</h6>
+                                <p class="card-text p-0" style="font-size: small; font-weight: 300;">End of study
+                                    project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/particles.js"></script>
+    <script src="./assets/js/hammer-2.0.8.js"></script>
+    <script src="./assets/js/sections-nav.js"></script>
+</body>
+
+</html>
